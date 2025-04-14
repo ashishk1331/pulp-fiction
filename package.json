@@ -1,0 +1,32 @@
+{
+  "name": "pulp",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/bun": "latest",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "3.5.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.29.0",
+    "@clack/core": "^0.4.2",
+    "@clack/prompts": "^0.10.1"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "dev": "bun run --watch src/index.ts",
+    "export": "bun build src/index.ts --compile --outfile pulp-fiction"
+  },
+  "lint-staged": {
+    "**/*.{ts}": "eslint --fix",
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
