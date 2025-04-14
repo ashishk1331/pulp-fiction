@@ -18,12 +18,14 @@
   "dependencies": {
     "@changesets/cli": "^2.29.0",
     "@clack/core": "^0.4.2",
-    "@clack/prompts": "^0.10.1"
+    "@clack/prompts": "^0.10.1",
+    "@google/genai": "^0.8.0",
+    "dotenv": "^16.5.0"
   },
   "scripts": {
     "prepare": "husky",
     "dev": "bun run --watch src/index.ts",
-    "export": "bun build src/index.ts --compile --outfile pulp-fiction"
+    "export": "bun build src/index.ts --compile --minify --outfile pulp-fiction"
   },
   "lint-staged": {
     "**/*.{ts}": "eslint --fix",
