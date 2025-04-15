@@ -1,3 +1,5 @@
+![Banner](banner.jpg)
+
 # pulp
 
 > AI commit writter for better commits and descriptions.
@@ -24,3 +26,4 @@ bun export
 
 1. [clack.cc](https://www.clack.cc/)
 2. [bun.sh](https://bun.sh/docs)
+3. [Gemini API](https://ai.google.dev/gemini-api/docs/text-generation)
